@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <!--Nombre, Apellido, Edad, Sexo, DNI, Email-->
+    <fieldset style="width: 650px; border-color: black; border-radius: 8px; text-align: center;">
+        <div class="post">
+            <div class="contact col-lg-6">
+                <div class="title">
+                     <h2>Formulario</h2>
+                </div>
+                <form style="text-align: center;">   
+                    <div class="input-group">
+                        <label>Nombre: <label>
+                        <input type="text" placeholder="Nombre" required pattern="[a-zA-Z]+" />
+    
+                        <label>Apellido</label>
+                        <input type="text" placeholder="Apellido" required pattern="[a-zA-Z]+" />
+                    </div>
+                    <div class="input-group"> 
+                        <label>Edad</label>
+                        <input type="number" placeholder="Edad" min="18" max="80" required>
+    
+                        <label>Celular</label>
+                        <input type="tel"  placeholder="Celular"  pattern="[0-9]{9}" maxlength="9" required >                
+                    </div>
+                    <div class="input-group">
+                        <label for="">DNI</label>
+                        <input type="tel" placeholder="DNI"  pattern="[0-9]{8}" maxlength="8"required >
+    
+                        <label for="">Correo</label>
+                        <input type="email" placeholder="Email" required>                    
+                    </div>
+                    
+                    <div class="input-group" >  
+                        <label>Sexo:</label>                 
+                            <input type="radio" name="sexo" value="hombre" checked="checked" required> Hombre
+                            <input type="radio" name="sexo" value="mujer" required> Mujer                                    
+                    </div>
+                                 
+                    <div class="input-group">
+                        <textarea name="" id="" cols="47" maxlength="140"  placeholder="Descripción" required></textarea>
+                    </div>
+                    <button class="button-enviar" type="submit">Enviar</button>
+                </form>
+                
+            </div>
+        </div>
+
+    </fieldset>
+    
+</body>
+</html>
