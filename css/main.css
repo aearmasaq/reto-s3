@@ -24,8 +24,8 @@ a{
         font-weight: 600;
         font-size: 20px;
         color:#F2FBEF;
-        padding-top:15px;
-        padding-bottom:15px;
+        padding-top:2px;
+        padding-bottom:2px;
         padding-left:40px;
         padding-right:40px;
         background-color:#5F04B4;
@@ -82,12 +82,7 @@ textarea {
     resize: none;
   }
 
-  body{
-    text-align: center; 
-    
-     
-  }
-
+  
   .button-enviar {
       background-color: #0B4C5F;
       border-radius: 8px;
@@ -113,4 +108,13 @@ label{
 
 fieldset{
     width: 650px; border-color: black; border-radius: 8px;
+}
+
+p {
+    width: 80%;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #f8f8f8;
+    padding: 30px 0 0 0 ;
 }
